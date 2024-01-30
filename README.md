@@ -12,7 +12,7 @@ Welcome to the Fetch API Practice Project! This project serves as a simple demon
 
 ## Getting Started
 
-Feel free to use this project as a starting point for learning and experimenting with the Fetch API. The code is intentionally "kept simple" for educational purposes. There's in discovery, thus learning is fun!
+Feel free to use this project as a starting point for learning and experimenting with the Fetch API. The code is intentionally "kept simple" for educational purposes. There's joy in discovery, thus learning is fun!
 
 ## Project Structure
 
