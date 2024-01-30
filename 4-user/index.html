@@ -2,14 +2,20 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
- <link rel="stylesheet" href="style.css">
+ <title>4</title>
+ <link rel="stylesheet" href="4-style.css">
 </head>
 <body>
- <h1>User Data</h1>
- <p>This is a simple app that uses a dedicated worker to streamline the process to fetch and only display a user's ID.</p>
- <ul id="list">
- </ul>
+  <div id="page4" style="display: none;">
+    <h1>User Data</h1>
+    <p>This is a simple app that uses a dedicated worker to streamline the process to fetch and display a single user's ID, name, username, email address, phone number, and website URL.</p>
+    <ul id="list"></ul>
+    <button onclick="loadPage('page1')">Go back to Page 1</button>
+   </div>
  <script src="4-user.js"></script>
+ <script src="../navigation.js"></script>
+ <script>
+  loadPage('page1');
+</script>
 </body>
 </html>
