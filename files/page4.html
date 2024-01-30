@@ -3,16 +3,34 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>4</title>
- <link rel="stylesheet" href="4-style.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="page4" style="display: none;">
+  <div id="page4">
+    <button id="page1-btn">Go to Page 1</button>
     <h1>User Data</h1>
-    <p>This is a simple app that uses a dedicated worker to streamline the process to fetch (using the fetch API )and display a user's ID, name, username, email address, phone number, and website URL.</p>
+    <p>This is a simple app that uses the Fetch API with basic promise chaining to retrieve data from a server and display a user's ID, name, username, email address, phone number, and website URL.</p>
     <ul id="list"></ul>
-    <button id="loadUserButton">Load Another User</button>
-    <a href="page2.html"><button>Go to Page 5</button></a>
-   </div>
- <script src="4-user.js"></script>
+    </div>
+  <script src="4-user.js"></script>
+  <script>
+  const page4 = document.getElementById('page4');  
+
+  function fadeOut(elem) {
+    elem.style.opacity = 0;  
+  }
+
+  function loadPage(url) {
+    fadeOut(page4);
+    setTimeout(() => {  
+      window.location.href = url;
+    }, 500);
+  }
+
+  const page1btn = document.getElementById('page1-btn');
+  page1btn.addEventListener('click', () => {
+    loadPage('page1.html');
+  });
+  </script>
 </body>
 </html>

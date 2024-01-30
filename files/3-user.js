@@ -1,4 +1,4 @@
-// Using promise chaining and promise.any() using the fetch() API to perform networking in JavaScript to fetch cities data
+// Using promise chaining and promise.any() using the fetch() API to perform networking in JavaScript to fetch user data at the click of a button
 
 // code 3
 

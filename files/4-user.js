@@ -1,4 +1,4 @@
-// Using a dedicated worker to perform networking in JavaScript to calculate the number of characters in the response JSON object...
+// Using a dedicated worker to perform networking in JavaScript to fetch data at the click of a button
 
 //A button is created and appended to the DOM.
 // An event listener is added to the button. When the button is clicked, it sends a message to the worker with the URL of the API as a parameter.

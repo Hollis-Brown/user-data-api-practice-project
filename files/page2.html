@@ -4,16 +4,35 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>2</title>
- <link rel="stylesheet" href="2-style.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div id="page2" style="display: none;">
-  <h1>User Data</h1>
-  <p>This is a simple app that uses promise chaining alongside Promise.all() with the fetch API. The code fetches user's data and after both promise1 and promise2 are resolved, it displays two user's IDs, names, usernames, email addresses, phone numbers, and website URLs.</p>
-  <ul id="list"></ul>
-  <button id="loadUserButton">Load Another User</button>
-  <a href="page3.html"><button>Go to Page 3</button></a>
- </div>
- <script src="2-user.js"></script>
+  <div id="page2">
+    <button id="page3-btn">Go to Page 3</button>
+    <h1>User Data</h1>
+    <p>This is a simple app that uses the Fetch API with basic promise chaining to retrieve data from a server and display a user's ID, name, username, email address, phone number, and website URL.</p>
+    <ul id="list"></ul> 
+    </div>
+  <script src="2-user.js"></script>
+  <script>
+    const page2 = document.getElementById('page2');
+
+    function fadeOut(elem) {
+      elem.style.opacity = 0;
+    }
+
+    function loadPage(url) {
+      fadeOut(page2);
+      setTimeout(() => { 
+        window.location.href = url;
+      }, 500);
+    }
+
+    const page3btn = document.getElementById('page3-btn');
+    page3btn.addEventListener('click', () => {
+      loadPage('page3.html');
+    });
+  </script>
 </body>
 </html>
+
