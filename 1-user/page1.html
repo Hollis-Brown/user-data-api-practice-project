@@ -9,15 +9,11 @@
 <body>
   <div id="page1">
     <h1>User Data</h1>
-    <p>This is a simple app that uses the Fetch API with basic promise chaining to seamlessly retrieve data from a server and displays a user's ID, name, username, email address, phone number, and website URL.</p>
+    <p>This is a simple app that uses the Fetch API with basic promise chaining to retrieve data from a server and display a user's ID, name, username, email address, phone number, and website URL.</p>
     <ul id="list"></ul>
     <button id="loadUserButton">Load Another User</button>
-    <button onclick="loadPage('page2')">Go to Page 2</button>
+    <a href="page2.html"><button>Go to Page 2</button></a>
    </div>
   <script src="1-user.js"></script>
-  <script src="navigation.js"></script>
-  <script>
-     loadPage('page2');
-  </script>
 </body>
 </html>

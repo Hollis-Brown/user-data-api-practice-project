@@ -8,14 +8,11 @@
 <body>
   <div id="page4" style="display: none;">
     <h1>User Data</h1>
-    <p>This is a simple app that uses a dedicated worker to streamline the process to fetch and display a single user's ID, name, username, email address, phone number, and website URL.</p>
+    <p>This is a simple app that uses a dedicated worker to streamline the process to fetch (using the fetch API )and display a user's ID, name, username, email address, phone number, and website URL.</p>
     <ul id="list"></ul>
-    <button onclick="loadPage('page1')">Go back to Page 1</button>
+    <button id="loadUserButton">Load Another User</button>
+    <a href="page2.html"><button>Go to Page 5</button></a>
    </div>
  <script src="4-user.js"></script>
- <script src="../navigation.js"></script>
- <script>
-  loadPage('page1');
-</script>
 </body>
 </html>
